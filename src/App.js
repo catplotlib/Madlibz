@@ -17,7 +17,7 @@ function App() {
 
   const getData = async () => {
     try {
-      const response = await fetch("http://madlibz.herokuapp.com/api/random");
+      const response = await fetch("https://madlibz.herokuapp.com/api/random");
       const data = await response.json();
       setBlanks(data.blanks);
       setBody(data.value);
