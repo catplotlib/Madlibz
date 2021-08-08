@@ -83,9 +83,9 @@ video {
   .card {
     background-color: #e1e0db;
     padding: 6% 12% 8%;
-    margin-top: 40%;
+    margin-top: 20%;
   }
-  p {
+  .mad {
     font-size: 1rem;
   }
   .pb {
