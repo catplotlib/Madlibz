@@ -16,10 +16,14 @@ function App() {
   }, []);
 
   const getData = async () => {
-    const response = await fetch("http://madlibz.herokuapp.com/api/random");
-    const data = await response.json();
-    setBlanks(data.blanks);
-    setBody(data.value);
+    try {
+      const response = await fetch("http://madlibz.herokuapp.com/api/random");
+      const data = await response.json();
+      setBlanks(data.blanks);
+      setBody(data.value);
+    } catch (error) {
+      console.error(error);
+    }
   };
   const handleSubmit = (e) => {
     e.preventDefault();
