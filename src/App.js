@@ -54,7 +54,12 @@ function App() {
                         <p className="pb">{blank}</p>
                       </div>
                       <div>
-                        <input id={index} key={index} type="text" />
+                        <input
+                          id={index}
+                          key={index}
+                          type="text"
+                          autoComplete="off"
+                        />
                       </div>
                     </div>
                   );
