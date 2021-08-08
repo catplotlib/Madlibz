@@ -76,11 +76,11 @@ function App() {
                   );
                 })}
                 <br />
-                <center>
+                {/* <center>
                   <button onClick={() => window.location.reload(false)}>
                     Try one more!
                   </button>
-                </center>
+                </center> */}
               </div>
             </>
           )}
